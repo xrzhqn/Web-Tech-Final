@@ -1,0 +1,441 @@
+@font-face {
+	font-family: NormalAudi;
+	src: url(../fonts/auditype_extendednormal.ttf);
+}
+@font-face {
+	font-family: BoldAudi;
+	src: url(../fonts/auditype_extendedbold.ttf);
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+* {
+	font-family: NormalAudi;
+}
+
+section * {
+	width: 80%;
+}
+
+/* Navbar */
+#navbar {
+	border-bottom: 1px solid #d8dce1;
+	color: #000;
+}
+#navbar .container-fluid {
+	width: 80%;
+}
+nav div a {
+	color: #000;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .6);
+}
+
+nav div a:hover {
+	color: #000;
+}
+
+#logos-wrapper li a {
+	cursor: default;
+}
+
+a i {
+	cursor: pointer;
+}
+
+#Logo-wrapper a {
+	font-family: BoldAudi;
+}
+
+/* Searchbar */
+#search {
+	margin-top: 2%;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	padding: .7% 0;
+	opacity: 0;
+	z-index: 10;
+	transition: all 0.5s ease-in-out;
+}
+#searchbar {
+	border: 1px solid #d8dce1;
+	box-shadow: none;
+	border-radius: 0;
+	width: 20%;
+}
+
+/* Shopping cart */
+#shopping-cart {
+	position: fixed;
+	z-index: 1000;
+	background-color: #fff;
+	right: -50%;
+	padding: 0;
+	width: 30%;
+	transition: ease-in-out 0.3s;
+	padding-top: calc(var(--index) * 2.5);
+	height: 100vh;
+}
+#shopping-cart * {
+	padding: 0;
+}
+#cart-header h1 {
+	font-size: calc(var(--index) * .8);
+	font-family: BoldAudi;
+	margin: 0;
+	width: auto;
+}
+.divider {
+	margin-top: calc(var(--index));
+	margin-bottom: calc(var(--index));
+	height: 1px;
+	width: 100%;
+	background-color: #000;
+}
+#cart-product-img {
+	width: 45%;
+	background: url(../src/shop/poppins.png) center no-repeat;
+	background-size: 50%;
+	background-color: #f0f0f0;
+}
+#cart-product-img img {
+	transform: scale(.8);
+	height: calc(var(--index) * 5);
+}
+#cart-product-caption {
+	width: 55%;
+}
+#product-title {
+	padding-bottom: calc(var(--index) * .6);
+}
+#product-title h1 {
+	font-size: calc(var(--index));
+	letter-spacing: -2px;
+}
+.price {
+	font-family: BoldAudi;
+}
+.cart-size {
+	font-family: BoldAudi;
+}
+.cart-quantity {
+	font-family: BoldAudi;
+}
+.cart-total {
+	font-family: BoldAudi;
+}
+#purchase-button {
+	background-color: #000;
+	border-radius: 0;
+	width: 100%;
+	padding: calc(var(--index) * .5) 0;
+}
+
+/* Hero Section */
+
+/* main {
+	width: 90%;
+	display: flex;
+} */
+
+#hero {
+	display: flex;
+	align-items: center;
+	margin-bottom: calc(var(--index) * 2);
+	width: 80%;
+}
+
+#hero-img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#hero-img-wrapper {
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: calc(var(--index) * 3.7);
+}
+
+
+/* Must Have Section */
+#must-have {
+	margin-bottom: calc(var(--index) * 2);
+	width: 80%;
+}
+
+#must-have-caption {
+	margin-bottom: calc(var(--index) * 2);
+}
+
+#must-have-caption p {
+	font-family: BoldAudi;
+	cursor: default;
+	font-size: calc(var(--index) * 1.5);
+}
+
+#must-have-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+#must-have-left {
+	background-color: #000;
+	width: auto;
+	width: 39%;
+	margin: 0;
+}
+#must-have-left p {
+	font-size: calc(var(--index) * .6);
+	margin-bottom: calc(var(--index) * 2);
+}
+#must-have-left button {
+	padding: 0;
+	letter-spacing: -2px;
+	padding: calc(var(--index) * .5) 0;
+}
+
+#content-slogan {
+	font-family: BoldAudi;
+	font-size: calc(var(--index) * 1.5);
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	padding: 0;
+}
+
+#must-have-slogan-wrapper {
+	margin-bottom: calc(var(--index) * 1);
+}
+
+#must-have-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 59%;
+	height: calc(var(--index) * 15);
+	margin: 0;
+	background-color: #f0f0f0;
+	padding: 0;
+}
+#must-have-right img {
+	width: 55%;
+	transform: scale(0.8);
+	transition: all 0.5s;
+}
+
+/* Merch */
+
+#merch {
+	width: 80%;
+	margin-bottom: calc(var(--index) * 2);
+}
+
+#merch-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#merch-wrapper div a {
+	color: #000;
+	text-decoration: none;
+	float: right;
+	width: auto;
+	font-size: calc(var(--index) * .6);
+}
+
+#merch-wrapper h1 {
+	font-size: calc(var(--index) * 1.5);
+	font-family: BoldAudi;
+}
+
+#delitel {
+	height: 1px;
+	background-color: #000;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: calc(var(--index) * 1.5);
+}
+
+#merch-grid {
+	margin-bottom: calc(var(--index) * 2);
+}
+
+#merch-row {
+	width: 100%;
+}
+
+.col-md-4 img {
+	width: 100%;
+	height: 100%;
+}
+
+#merch-row div {
+	height: 50vh;
+	background-color: #f0f0f0;
+}
+
+#merch-row div:not(:last-child) {
+	margin-right: 5px;
+}
+
+#cards-wrapper div .container {
+	background-color: #f0f0f0;
+}
+
+#cards-wrapper div .container img {
+	width: 100%;
+	transform: scale(.7);
+	transition: .5s all;	
+}
+#osobenka {
+}
+#cards-wrapper div .container:hover img {
+	transform: scale(.9);
+}
+#osobenka:hover {
+	transform: scale(3);
+}
+
+/* Antique */
+#antique {
+	width: 80%;
+	margin-bottom: calc(var(--index) * 2);
+}
+
+#antique-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#antique-wrapper div a {
+	color: #000;
+	text-decoration: none;
+	float: right;
+	width: auto;
+	font-size: calc(var(--index) * .6);
+}
+
+#antique-wrapper h1 {
+	font-size: calc(var(--index) * 1.5);
+	font-family: BoldAudi;
+}
+
+#delitel {
+	height: 1px;
+	background-color: #000;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: calc(var(--index) * 1.5);
+}
+
+#antique-grid {
+	margin-bottom: calc(var(--index) * 2);
+}
+
+#antique-row {
+	width: 100%;
+}
+
+.col-md-4 img {
+	width: 100%;
+	height: 100%;
+}
+
+#antique-row div {
+	height: 50vh;
+	background-color: #f0f0f0;
+}
+
+#antique-row div:not(:last-child) {
+	margin-right: 5px;
+}
+
+#cards-wrapper div .container {
+	background-color: #f0f0f0;
+}
+
+#cards-wrapper div .container img {
+	width: 100%;
+	transform: scale(.7);
+	transition: .5s all;	
+}
+#osobenka {
+}
+#cards-wrapper div .container:hover img {
+	transform: scale(.9);
+}
+#osobenka:hover {
+	transform: scale(3);
+}
+/* Footer */
+footer {
+	background: #fff;
+	padding: 10rem 0;
+	font-family: BoldAudi;
+}
+#footer-wrapper {
+	width: 80vw;
+}
+.single-content {
+	align-items: start;
+	text-align: center;
+	padding: 10rem 0;
+}
+.slogan{
+	font-size: 6rem;
+	width: 25vw;
+	height: 9vh;
+}
+#right {
+	padding-left: 9rem;
+}
+.single-box p {
+	color: #000;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #000;
+}
+.single-box .card-area i {
+	color: #000;
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #000;
+	line-height: 2.5;
+	font-weight: 100;
+	font-size: 1.3rem;
+}
+.single-box h2 {
+	color: #000;
+	font-size: 3rem;
+	font-weight: 700;
+}
+#basic-addon2 {
+	background: #fff;
+	color: #000;
+}
+.socials i {
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+
+/* ----------------- */

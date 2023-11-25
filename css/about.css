@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@600&display=swap');
+@import url();
+
+@font-face {
+	font-family: BoldAudi;
+	src: url(../fonts/auditype_extendedbold.ttf);
+}
+@font-face {
+	font-family: NormalAudi;
+	src: url(../fonts/auditype_extendednormal.ttf);
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+*{
+	image-rendering: auto;
+}
+
+/* Header (Navbar)--------------------------- */
+header {
+	z-index: 4;
+	position: fixed;
+}
+
+#main {
+	font-size: calc(var(--index) *.6);
+	font-family: NormalAudi;
+	width: 100vw;
+	transition: 0.5s all;
+}
+
+.logo-frame {
+	width: calc(var(--index) * 5);
+}
+
+#navbar-inner {
+	width: 70vw;
+}
+
+#expander {
+	width: 20vw;
+	transition: 0.5 linear;
+}
+#expander1 {
+	width: 20vw;
+	transition: 0.5 linear;
+}
+/* ------------------------------------------- */
+
+
+/* main--------------------------------------- */
+main {
+	font-family: NormalAudi;
+}
+
+
+/* Hero Section */
+#hero-container {
+	position: relative;
+	overflow: hidden;
+}
+#about-hero-img {
+	transform: scale(1.2);
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	filter: brightness(40%);
+}
+#about-us {
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#about-us-text {
+	font-size: calc(var(--index) * 3);
+	font-family: BoldAudi;
+}
+
+/* Overview Section */
+#overview {
+	height: 70vh;
+}
+#mainmain {
+	width: 60vw;
+}
+.overview-text {
+	font-size: calc(var(--index) * .7);
+	font-weight: bold;
+}
+#info-wrapper {
+	width: 100vw;
+}
+.overview-text-info {
+	font-size: calc(var(--index) * .7);
+}
+
+/* --------------------History------------------ */
+
+#firsts-wrapper {
+	margin-bottom: calc(var(--index) * 100);
+}
+
+/* Slogan */
+#history {
+	height: auto;
+	background-color: #000;
+}
+#slogan {
+	font-size: calc(var(--index) * 2.5);
+	font-family: BoldAudi;
+	overflow-x: hidden;
+	padding: calc(var(--index) * 2) 0;
+}
+#cars-slogan, #matter-slogan {
+	color: #000;
+	text-align: right;
+	direction: rtl;
+	letter-spacing: calc(var(--index) * .4);
+}
+#design-slogan {
+	color: #000;
+	text-align: left;
+	direction: ltr;
+	letter-spacing: calc(var(--index) * .4);
+}
+
+/* Where Did We Start? */
+
+.hr {
+	height: 2px;
+	background-color: #000;
+	width: 25vw;
+	margin-bottom: calc(var(--index) * 3);
+}
+
+.starting-point {
+	font-size: calc(var(--index) * 2);
+	font-family: BoldAudi;
+	width: auto;
+}
+.starting-point-info {
+	font-size: calc(var(--index) * .6);
+	width: auto;
+	padding-left: 5vw;
+}
+#read {
+	margin-left: 5vw;
+	margin-top: 3vh;
+	font-size: calc(var(--index) * .7);
+}
+
+/* Animated Button------------------------------------------- */
+.button:hover {
+	color: #000;
+}
+
+.button svg rect {
+	fill: none;
+	stroke: #000;
+	stroke-width: 2;
+	stroke-dasharray: 450, 0;
+	transition: all 0.5s linear;
+}
+
+.button:hover svg rect {
+	stroke-width: 5;
+	stroke-dasharray: 20, 300;
+	stroke-dashoffset: 48;
+	stroke: #000;
+	transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+/* --------------------------------------------------------- */
+
+/* -----------------------Main end-------------------------- */
+
+/* Footer--------------------------------------------------- */
+footer {
+	background: #fff;
+	padding: 10rem 0;
+	font-family: BoldAudi;
+}
+#footer-wrapper {
+	width: 80vw;
+}
+.single-content {
+	align-items: start;
+	text-align: center;
+	padding: 10rem 0;
+}
+.slogan{
+	font-size: 6rem;
+	width: 25vw;
+	height: 9vh;
+}
+#right {
+	padding-left: 9rem;
+}
+.single-box p {
+	color: #000;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #000;
+}
+.single-box .card-area i {
+	color: #000;
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #000;
+	line-height: 2.5;
+	font-weight: 100;
+	font-size: 1.3rem;
+}
+.single-box h2 {
+	color: #000;
+	font-size: 3rem;
+	font-weight: 700;
+}
+#basic-addon2 {
+	background: #fff;
+	color: #000;
+}
+.socials i {
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+/* -------------------------------------------------------------- */

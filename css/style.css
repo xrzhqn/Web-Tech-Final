@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@600&display=swap');
+@import url();
+
+@font-face {
+	font-family: BoldAudi;
+	src: url(../fonts/auditype_extendedbold.ttf);
+}
+@font-face {
+	font-family: NormalAudi;
+	src: url(../fonts/auditype_extendednormal.ttf);
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+body::-webkit-scrollbar {
+	width: 0px;
+}
+
+*{
+	image-rendering: auto;
+	scroll-behavior: smooth;
+}
+
+/* Loader */
+.loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+}
+/* ----- */
+header {
+	z-index: 4;
+	position: fixed;
+}
+
+#main {
+	font-size: calc(var(--index) *.6);
+	font-family: NormalAudi;
+	width: 100vw;
+	transition: 0.5s all;
+}
+
+.logo-frame {
+	width: calc(var(--index) * 5);
+}
+
+#navbar-inner {
+	width: 70vw;
+}
+
+#expander {
+	width: 20vw;
+	transition: 0.5 linear;
+}
+#expander1 {
+	width: 20vw;
+	transition: 0.5 linear;
+}
+
+#video-container {
+	padding: 0;
+	position: top;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+	z-index: 0;
+}
+
+.video {
+	width: 100%;
+}
+
+#sound {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	bottom: calc(var(--index) * 2);
+	right: calc(var(--index) * 2);
+	z-index: 2;
+	box-shadow: none;
+}
+
+/* Video -> Img */
+#photo-container {
+	padding: 0;
+}
+#photo-container img {
+	width: 100vw;
+	height: 100vh;
+}
+
+.hero-text {
+	position: absolute;
+	z-index: 1;
+	font-family: BoldAudi;
+	top: 40%;
+	left: 10%;
+	font-size: calc(var(--index) * 2);
+	transform: rotate3d(0, 0, 45deg);
+	/* object-fit: ; */
+}
+/*  */
+
+.shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  pointer-events: none;
+}
+
+.shadow-top {
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+
+
+
+#section2{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../src/McLaren_2019-21_Novitec_720S_Spider_Grey_Roadster_602842_4500x3002.jpg) center no-repeat;
+	background-size: cover;
+	font-family: BoldAudi;
+}
+#section2::before {
+  content: "";
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+}
+#about-us-wrapper {
+	position: absolute;
+	height: 100vh;
+	z-index: 1;
+}
+#about-us-content {
+	width: auto;
+}
+#Discover-us {
+	font-size: calc(var(--index) * 3);
+
+}
+#Welcome {
+	font-size: calc(var(--index));
+	letter-spacing: 2px;
+}
+
+.shadow-about-bottom {
+	position: absolute;
+  top: 200;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  pointer-events: none;
+}
+
+
+
+
+#section3{
+	position: relative;
+	height: 100vh;
+	background: url(../src/porsche.jpg);
+}
+.shadow-slider-top{
+	top: 0;
+	z-index: 2;
+	height: 30%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0));
+}
+
+.shadow-slider-bottom {
+	bottom: 0;
+	z-index: 2;
+	height: 30%;
+
+}
+
+#section4{
+	position: relative;
+}
+
+/* Swiper */
+
+.swiper {
+	width: 100%;
+	height: 100%;
+	background: #000;
+  }
+
+  .swiper-slide {
+	font-size: 18px;
+	color: #fff;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 40px 60px;
+  }
+
+  .parallax-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 130%;
+	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+  }
+
+  .swiper-slide .title {
+	font-size: 41px;
+	font-weight: 300;
+  }
+
+  .swiper-slide .subtitle {
+	font-size: 21px;
+  }
+
+  .swiper-slide .text {
+	font-size: 14px;
+	max-width: 400px;
+	line-height: 1.3;
+  }
+  #section3 a:hover {
+	text-decoration: none;
+  }
+  #swiper-explore {
+	font-size: calc(var(--index) * .8);
+	background-color: transparent; 
+	border: #fff 1px solid;
+	border-radius: 0;
+  }
+
+/* End Swiper */
+
+
+
+/* Footer */
+footer {
+	background: #000;
+	padding: 10rem 0;
+	font-family: BoldAudi;
+}
+#footer-wrapper {
+	width: 80vw;
+}
+.single-content {
+	align-items: start;
+	text-align: center;
+	padding: 10rem 0;
+}
+.slogan{
+	font-size: calc(var(--index) * 3);
+	width: 25vw;
+	height: 9vh;
+}
+#right {
+	padding-left: calc(var(--index) * 6);
+}
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: calc(var(--index));
+	margin-right: 1rem;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 100;
+	font-size: calc(var(--index) * .7);
+}
+.single-box h2 {
+	color: #fff;
+	font-size: calc(var(--index) * 2);
+	font-weight: 700;
+}
+#basic-addon2 {
+	background: #fff;
+	color: #000;
+}
+/* For Animation */
+.card-area a {
+	transition: transform 0.3s ease-in-out;
+}
+
+.card-area a.icon-hover {
+	transform: scale(1.2);
+}
+
+
+/* Line under elements of Navbar */
+#expander a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	transition: width 0.3s ease;
+}
+
+#expander a:hover::after {
+	width: 100%;
+}
+
+#expander1 a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	transition: width 0.3s ease;
+}
+
+#expander1 a:hover::after {
+	width: 100%;
+}
+
+/* Line Under Elements of Footer */
+ul li a {
+	width: auto;
+}
+.single-box ul li{
+	width: auto;
+}
+.single-box ul li a span::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	transition: width 0.3s ease;
+}
+
+.single-box ul li a span:hover::after {
+	width: 100%;
+}
+
+
+
+
+
+
+/* BreakPoints */
+@media (max-width: 1199px) {
+	#main {
+		font-size: calc(var(--index) *.6);
+	}
+}
+
+@media (max-width: 992px) {
+	
+}
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 576px) {
+	
+}

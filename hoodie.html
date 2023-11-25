@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="css/hoodie.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="shortcut icon" href="src/Logo/нифигово.png" type="image/x-icon">
+
+
+
+  <title>Lenuar | Shop</title>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top position-fixed w-100 pb-0 pt-0" id="navbar">
+  <div class="container-fluid p-0" id="navbar-inner">
+  
+    <!-- Элементы слева -->
+    <div class="container p-0">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="shop.html">Merch</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="shop.html">antique</a>
+				</li>
+			</ul>
+		</div>
+
+    <!-- Элемент (логотип-надпись) по центру -->
+    <div class="container p-0" id="Logo-wrapper">
+			<a class="navbar-brand mx-auto" href="index.html">Lenuar</a>
+		</div>
+
+    <!-- Элементы справа -->
+    <div class="container p-0">
+			<ul class="navbar-nav ml-auto" id="logos-wrapper">
+				<li class="nav-item">
+					<a class="nav-link pr-3" href="#">
+						<i class="fa-solid fa-magnifying-glass" style="color: #000;"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fa-solid fa-cart-shopping" style="color: #000;"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+    
+  </div>
+</nav>
+
+<main>
+  <!-- Swiper SWIPEEEEER -->
+    <div class="container-fluid p-0" id="content-wrapper">
+      <div class="container-fluid p-0 d-flex">
+        <div class="container m-0" id="swiper-container">
+          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="src/shop/hoodie-removebg-preview.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/shop/FE13874UOX12_SA3_001-removebg-preview.png" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="src/shop/hoodie-removebg-preview.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="src/shop/FE13874UOX12_SA3_001-removebg-preview.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" id="product-title">
+          <p class="text-uppercase product-name">Lenuar Hoodie</p>
+          <p class="text-uppercase product-price" style="font-family: BoldAudi;">50$</p>
+          <p class="product-info">Wrap yourself in the essence of automotive innovation with our exclusive Automotive Signature Hoodie. This isn't just a hoodie; it's a celebration of speed, precision, and design. The hood features a dynamic silhouette inspired by the sleek lines of our high-performance vehicles, while the soft, premium fabric ensures comfort on and off the road. Whether you're a petrolhead, a design enthusiast, or simply appreciate the marriage of style and horsepower, this hoodie is your invitation to wear the spirit of automotive excellence. Drive your passion forward with Lenuar – where every detail echoes the beauty of the open road.</p>
+          <div class="container" id="product-pros">
+            <ul>
+              <li>Thickness</li>
+              <li>Wearableness</li>
+              <li>Comfortable material</li>
+            </ul>
+          </div>
+          <div class="divider"></div>
+
+          <div class="container d-flex justify-content-between p-0" id="size-container">
+            <p>Size </p>
+            <a href="#">Size Chart</a>
+          </div>
+          <div class="container p-0" id="size-list">
+            <ul class="list-inline">
+              <li class="text-uppercase list-inline-item pr-1">XXS</li>
+              <li class="text-uppercase list-inline-item pr-1">XS</li>
+              <li class="text-uppercase list-inline-item pr-1">S</li>
+              <li class="text-uppercase list-inline-item pr-1">M</li>
+              <li class="text-uppercase list-inline-item pr-1">L</li>
+              <li class="text-uppercase list-inline-item pr-1">XL</li>
+              <li class="text-uppercase list-inline-item pr-1">XXL</li>
+              <li class="text-uppercase list-inline-item">XXXL</li>
+            </ul>
+          </div>
+          <div class="container d-flex justify-content-between align-items-center p-0" id="button-group">
+            <div class="container d-flex p-0">
+                <div class="input-group-prepend p-0">
+                    <button class="btn" type="button" id="minus-btn">-</button>
+                </div>
+                <input type="number" class="form-control-sm text-xl-center" id="quantity" name="quantity" min="1" value="1" step="1" readonly>
+                <div class="input-group-append p-0">
+                    <button class="btn" type="button" id="plus-btn">+</button>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-end p-0">
+              <button class="btn text-uppercase" id="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+</main>
+
+<!-- Подключение Bootstrap JS и Popper.js (если необходимо) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="js/hoodie.js"></script>
+
+</body>
+</html>

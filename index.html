@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lenuar</title>
+		<link rel="shortcut icon" href="src/Logo/нифигово.png" type="image/x-icon">
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Swiper -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+		<script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.0/build/player/lottie.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/libs/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body id="home">
+			<!-- loader -->
+			<!-- <div class="loader-wrapper"></div> -->
+			<header>
+				<!-- Навбар -->
+				<nav class="navbar navbar-expand-lg bg-transparent text-uppercase" id="main">
+					<div class="container-fluid d-flex align-items-start justify-content-between bh-transparent" id="navbar-inner">
+							<!-- Элементы слева -->
+							<div class="navbar-nav mt-3 d-flex justify-content-between" id="expander">
+								<a class="nav-item nav-link text-white" href="#section2" id="nav-link">About Us</a>
+								<a class="nav-item nav-link text-white" href="#section3" id="nav-link">Services</a>
+								<a class="nav-item nav-link text-white d-none" href="#">Search</a>
+							</div>
+							<!-- Лого по центру -->
+							<a class="navbar-brand nav-item" href="#home" id="frame">
+								<img src="src/obrezannyi_logo.png" alt="Your Logo" class="logo-frame" id="frameTamer">
+							</a>
+							<!-- Элементы справа -->
+							<div class="navbar-nav mt-3 d-flex justify-content-between" id="expander1">
+								<input type="text" class="form-control searchbar d-none" placeholder="Search" id="searchbar">
+								<div class=" search-container d-flex align-items-center" id="clicker" style="cursor: pointer;">
+									<a class="nav-link search-text mr-3 text-white" href="shop.html">Shop</a>
+								</div>
+								<div class="navbar-nav">
+									<a class="nav-item nav-link text-white" href="#section4" id="nav-link">Get in Touch</a>
+								</div>
+							</div>
+					</div>
+				</nav>
+			</header>
+
+			<!-- Поисковик который расскрывается при клике на кнопку + при Адаптивном уменьшении страницы тоже замути чето как в сайте мерса между 1024-1023пикс -->
+			<div class="container-fluid" id="searchbar"></div>
+
+			<!-- Меню который расскрывается при клике на кнопку меню при мелкой адаптивности, тоже посмотри на смтранице мерса, расположение не меняй, потому что это самое подходящее место -->
+			<div class="container-fluid" id="menu"></div>
+
+
+			<!-- Еще поиграйся с видео, потому что когда screensize меняется, видео уходит наверх -->
+
+			<!-- ВАЖНО, КОГДА МЕНЯЕШЬ АДАПТИВНОСТЬ, КУТТАЙ ЭКРАННЫН РАЗМЕРЫНЕ КАРАП ПРИМЕРНО ЖАКЫНДАТ, ПОТОМУ ЧТО ОЛАРДА 100vw СЕНДЕГЫ 10vw ПЕН ТЕН, ПОЛУЧАЕТСЯ
+					 vh тоже меняется и жасаган затын не в тему болып калуы мумкын, так что осторожно! -->
+
+			<button id="sound" class="btn bg-transparent btn-lg position-absolute">
+				<i class="fa-solid fa-volume-off" style="color: #fff;"></i>
+			</button>
+			<!-- Background Video -->
+			<div class="container-fluid" id="video-container">
+				<video autoplay loop class="video">
+					<source src="src/Rolls-Royce Spectre In Motion _ A New Benchmark Of Distinction.mp4" type="video/mp4">
+				</video>
+				<!-- Button at the bottom right of the video container -->
+				<div class="shadow"></div>
+			</div>
+
+
+			<!-- Discover Us Section -->
+			<main>
+					<section class="container-fluid section p-0" id="section2">
+						<div class="shadow-top shadow-about-top"></div>
+						<div class="container float-left d-flex justify-content-center align-items-center" id="about-us-wrapper">
+
+							<div class="container" id="about-us-content">
+								<h1 class="text-white mb-5 text-uppercase" id="Discover-us">our History</h1>
+								<p class="text-white mb-5" id="Welcome">Welcome to Lenuar.</p>
+								<a href="about.html">
+									<button class="btn btn-outline-light rounded-0 pl-5 pr-5 pt-2 pb-2 text-uppercase" style="transition: .3s all; letter-spacing: 2px;">read</button>
+								</a>
+							</div>
+						</div>
+						<div class="shadow shadow-about-bottom"></div>
+					</section>
+
+					<!-- Swiper -->
+					<section class="container-fluid section p-0" id="section3">
+						<a href="shop.html">
+							<div class="shadow-top shadow-slider-top"></div>
+							<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+								<div class="parallax-bg" style="
+									  background-image: url(src/Audi_Coast_A3_Sportback_30_g-tron_2020_White_593144_4500x3000.jpg);
+									" data-swiper-parallax="-13%"></div>
+								<div class="swiper-wrapper" style="bottom: calc(var(--index) * -11); right: calc(var(--index) * -3);">
+								  <div class="swiper-slide">
+									<div class="title" data-swiper-parallax="-300"><h1 style="font-size: calc(var(--index) * 2);">Collectible cars</h1></div>
+									<div class="text" data-swiper-parallax="-100">
+									  <p style="font-size: calc(var(--index));">
+										Explore our newly unveiled collection of Collectible Toy Cars on our website.
+									  </p>
+									  <button class="btn text-uppercase text-white" id="swiper-explore">explore</button>
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="title" data-swiper-parallax="-300"><h1 style="font-size: calc(var(--index) * 2);">Collectible cars</h1></div>
+									<div class="text" data-swiper-parallax="-100">
+									  <p style="font-size: calc(var(--index));">
+										Explore our newly unveiled collection of Collectible Toy Cars on our website.
+									  </p>
+									  <button class="btn text-uppercase" id="swiper-explore">explore</button>
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="title" data-swiper-parallax="-300"><h1 style="font-size: calc(var(--index) * 2);">Collectible cars</h1></div>
+									<div class="text" data-swiper-parallax="-100">
+									  <p style="font-size: calc(var(--index));">
+										Explore our newly unveiled collection of Collectible Toy Cars on our website.
+									  </p>
+									  <button class="btn text-uppercase" id="swiper-explore">explore</button>
+									</div>
+								  </div>
+								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+							  </div>
+						</a>
+						<div class="shadow shadow-slider-bottom"></div>
+					</section>
+					<section class="container section" id="section4">
+					</section>
+					<section class="container section" id="section5">
+					</section>
+			</main>
+
+			<!-- Footer -->
+			<footer>
+        <div class="container-fluid" id="footer-wrapper">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6" id="large-box">
+                    <div class="single-box">
+                    	<div class="slogan text-white">Take</div>
+                    	<div class="slogan text-white" id="right">Your</div>
+                    	<div class="slogan text-white">Time &</div>
+                    	<div class="slogan text-white mb-5" id="right">Dream!</div>
+                    	<div class="card-area pt-5 d-flex justify-content-between w-50">
+												<a href="#"><i class="fa-brands fa-instagram"></i></a>
+												<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+												<a href="#"><i class="fa-brands fa-twitter"></i></a>
+												<a href="#"><i class="fa-brands fa-youtube"></i></a>
+												<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    	</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 d-flex justify-content-center align-items-center">
+                    <div class="single-box">
+                      <h2>Domain</h2>
+                    	<ul>
+                    	    <li><a href="shop.html"><span>Cars</span></a></li>
+                    	    <li><a href="about.html"><span>About</span></a></li>
+                    	    <li><a href="shop.html"><span>Shop</span></a></li>
+                    	</ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 d-flex justify-content-center align-items-center">
+                    <div class="single-box">
+                        <h2>Newsletter</h2>
+                        <p>Subscribe to our Newsletter to Get Notifications:</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="E-Mail" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="js/index/app.js"></script>
+		<script src="js/index/responsivity.js"></script>
+</body>
+</html>

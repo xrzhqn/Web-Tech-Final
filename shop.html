@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="css/shop.css">
+	<link rel="shortcut icon" href="src/Logo/нифигово.png" type="image/x-icon">
+  <title>Lenuar | Shop</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top position-fixed w-100 p-0" id="navbar">
+  <div class="container-fluid p-0">
+  
+    <!-- Элементы слева -->
+    <div class="container p-0">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#merch">Merch</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#antique">antique</a>
+				</li>
+			</ul>
+		</div>
+
+    <!-- Элемент (логотип-надпись) по центру -->
+    <div class="container p-0" id="Logo-wrapper">
+			<a class="navbar-brand mx-auto" href="index.html">Lenuar</a>
+		</div>
+
+    <!-- Элементы справа -->
+    <div class="container">
+			<ul class="navbar-nav ml-auto" id="logos-wrapper">
+				<li class="nav-item">
+					<a class="nav-link pr-3" href="#">
+						<i class="fa-solid fa-magnifying-glass" style="color: #000;"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fa-solid fa-cart-shopping" style="color: #000;"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+    
+  </div>
+</nav>
+
+<!-- Searchbar Toggler -->
+<div class="container-fluid position-fixed" id="search">
+	<input class="form-control" type="search" name="search" id="searchbar" placeholder="">
+</div>
+
+<!-- Shopping Cart Toggler -->
+<div class="container-fluid" id="shopping-cart">
+	<div class="container p-3">
+		<div class="container-fluid d-flex align-items-center" id="cart-header">
+			<div class="container"><h1 class="text-uppercase">shopping cart</h1></div>
+			<div class="container d-flex justify-content-end w-auto"><i class="fa-solid fa-x" style="color: #000;"></i></div>
+		</div>
+		<div class="divider"></div>
+		<div class="container-fluid d-flex w-100">
+			<div class="container d-flex justify-content-center" id="cart-product-img"></div>
+			<div class="container p-2" id="cart-product-caption">
+				<div class="container-fluid d-flex" id="product-title">
+					<div class="container d-flex align-items-center"><h1 class="text-uppercase m-0">product title</h1></div>
+					<div class="container w-auto d-flex align-items-center"><i class="fa-solid fa-trash"></i></div>
+				</div>
+				<div class="container-fluid" style="padding-bottom: calc(var(--index) * .6);">
+					<p class="text-uppercase m-0 price">50 KZT</p>
+				</div>
+				<div class="container-fluid d-flex">
+					<p class="pr-5">Size: <span class="cart-size">S</span></p>
+					<p>Quantity: <span class="cart-quantity">1</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="container-fluid d-flex justify-content-end">
+			<p>Total: <span class="cart-total">50 KZT</span></p>
+		</div>
+		<div class="container-fluid">
+			<button class="btn text-uppercase text-center text-white" id="purchase-button">
+				purchase
+			</button>
+		</div>
+	</div>
+</div>
+
+	<main>
+		<!-- Hero Section -->
+		<section class="container-fluid p-0" id="hero">
+			<div class="container-fluid p-0" id="hero-img-wrapper">
+				<img src="src/shop/Ferrari_Novitec_SF90_Spider_(F173A)_2022_Side_613323_4500x3000.jpg" alt="" srcset="" id="hero-img">
+			</div>
+		</section>
+
+		<!-- Must Have -->
+		<section class="container-fluid p-0" id="must-have">
+			<div class="container-fluid p-0" id="must-have-caption">
+				<p class="text-uppercase w-auto text-center">
+					Drive into style
+				</p>
+			</div>
+
+			<div class="container-fluid p-0" id="must-have-content">
+				<!-- Left side -->
+				<div class="container" id="must-have-left">
+					<div class="container p-3">
+						<div class="container p-0" id="must-have-slogan-wrapper">
+							<div class="container p-0 text-white" id="content-slogan">Ignition</div>
+							<div class="container p-0 text-white" id="content-slogan">Elegance</div>
+							<div class="container p-0 text-white" id="content-slogan">T-Shirt</div>
+						</div>
+	
+						<p class="text-white">Discover our must-have t-shirts.</p>
+						<a href="t-shirt.html" style="color: #000;"><button class="btn bg-white rounded-0 text-center w-100">SHOP NOW</button></a>
+					</div>
+				</div>
+				<!-- Right Side -->
+				<div class="container" id="must-have-right">
+					<img src="src/shop/poppins.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="container-fluid p-0" id="merch">
+			<div class="container-fluid p-0" id="merch-wrapper">
+				<div class="container p-0 m-0">
+					<h1>MERCH</h1>
+				</div>
+			</div>
+
+			<div class="container-fluid p-0" id="delitel"></div>
+
+
+<div class="container-fluid p-0 d-flex justify-content-center">
+	<div class="card-group text-uppercase d-flex justify-content-between w-100" id="cards-wrapper">
+		<div class="card pr-5" style="border: none; cursor: pointer;" id="shirt-card">
+		  <div class="container d-flex justify-content-center"><img src="src/shop/hmgoepprod-removebg-preview.png" class="card-img-top" alt="..." style="width: 83.55%;"></div>
+		  <div class="card-body">
+			<h5 class="card-title"><a href="t-shirt.html" style="color: #000;">10$</a></h5>
+			<p class="card-text"> </p>
+		  </div>
+		</div>
+		<div class="card pr-5" style="border: none; cursor: pointer;" id="hoodie-card">
+		  <div class="container"><img src="src/shop/hoodie-removebg-preview.png" class="card-img-top" alt="..."></div>
+		  <div class="card-body">
+			<h5 class="card-title"><a href="hoodie.html" style="color: #000;">50$</a></h5>
+			<p class="card-text"> </p>
+		  </div>
+		</div>
+		<div class="card" style="border: none; cursor: pointer;" id="sweatshirt-card">
+			<div class="container"><img src="src/shop/sweat-removebg-preview.png" class="card-img-top" alt="..."></div>
+			<div class="card-body">
+			  <h5 class="card-title"><a href="sweatshirt.html" style="color: #000;">40$</a></h5>
+			  <p class="card-text"> </p>
+			</div>
+		  </div>
+	  </div>
+</div>	
+		</section>
+
+
+<!-- ANTIQUE -->
+		<section class="container-fluid p-0" id="antique">
+			<div class="container-fluid p-0" id="antique-wrapper">
+				<div class="container p-0">
+					<h1>ANTIQUE</h1>
+				</div>
+				<div class="container p-0">
+					<a href="#">
+					</a>
+				</div>
+			</div>
+
+			<div class="container-fluid p-0" id="delitel"></div>
+<div class="container-fluid p-0 d-flex justify-content-center">
+	<div class="card-group text-uppercase d-flex justify-content-between w-100" id="cards-wrapper">
+		<div class="card pr-5" style="border: none; cursor: pointer;" id="retro-card">
+		  <div class="container d-flex justify-content-center"><img src="src/shop/png-transparent-antique-car-model-car-graphy-classic-car-red-toy-car-car-accident-retro-photography-removebg-preview.png" class="card-img-top" alt="..." style="width: 111%;"></div>
+		  <div class="card-body">
+			<h5 class="card-title"><a href="retro.html" style="color: #000;">399$</a></h5>
+			<p class="card-text"> </p>
+		  </div>
+		</div>
+		<div class="card pr-5" style="border: none; cursor: pointer;" id="muscle-car-card">
+		  <div class="container"><img src="src/shop/FSDBC0323_LEDE-removebg-preview.png" class="card-img-top" alt="..."></div>
+		  <div class="card-body">
+			<h5 class="card-title"><a href="muscle-car.html" style="color: #000;">399$</a></h5>
+			<p class="card-text"> </p>
+		  </div>
+		</div>
+		<div class="card" style="border: none; cursor: pointer;" id="hyper-car-card">
+			<div class="container"><img src="src/shop/lcd-models-pagani-zonda-purple-1-18-1-removebg-preview.png" class="card-img-top" alt="..."></div>
+			<div class="card-body">
+			  <h5 class="card-title"><a href="hyper-car.html" style="color: #000;">399$</a></h5>
+			  <p class="card-text"> </p>
+			</div>
+		  </div>
+	  </div>
+</div>	
+		</section>
+
+		<section class="container-fluid" id=""></section>
+	</main>
+
+	<footer>
+		<div class="container-fluid" id="footer-wrapper">
+				<div class="row">
+						<div class="col-lg-4 col-sm-6" id="large-box">
+								<div class="single-box">
+									<div class="slogan" id="left">Take</div>
+									<div class="slogan" id="right">Your</div>
+									<div class="slogan" id="left">Time &</div>
+									<div class="slogan mb-5" id="right">Dream!</div>
+									<div class="card-area pt-5 d-flex justify-content-between w-50">
+										<a href="#"><i class="fa-brands fa-instagram" style="color: #000;"></i></a>
+										<a href="#"><i class="fa-brands fa-facebook-f" style="color: #000;"></i></a>
+										<a href="#"><i class="fa-brands fa-twitter" style="color: #000;"></i></a>
+										<a href="#"><i class="fa-brands fa-youtube" style="color: #000;"></i></a>
+										<a href="#"><i class="fa-brands fa-linkedin-in" style="color: #000;"></i></a>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 d-flex justify-content-center align-items-center">
+								<div class="single-box">
+										<h2>Domain</h2>
+								<ul>
+									<li><a href="shop.html"><span style="color: #000;">Cars</span></a></li>
+									<li><a href="about.html"><span style="color: #000;">About</span></a></li>
+									<li><a href="shop.html"><span style="color: #000;">Shop</span></a></li>
+								</ul>
+								</div>                    
+						</div>
+						<div class="col-lg-4 col-sm-6 d-flex justify-content-center align-items-center">
+								<div class="single-box">
+										<h2 style="color: #000;">Newsletter</h2>
+										<p style="color: #000;">Subscribe to our Newsletter to Get Notifications:</p>
+										<div class="input-group mb-3">
+												<input type="text" class="form-control" placeholder="E-Mail" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+												<span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</footer>
+
+<!-- Подключение Bootstrap JS и Popper.js (если необходимо) -->
+<script src="js/shop.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
